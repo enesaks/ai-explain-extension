@@ -1,4 +1,4 @@
-🌍 Language: [English](README.md) | [Türkçe](README.tr.md)
+🌍 Language: [English](./README.md) | [Türkçe](./README.tr.md)
 # AI Explain – Akıllı Metin Açıklama Eklentisi
 
 AI Explain, herhangi bir web sitesinde metin seçerek tek tıklamayla yapay zekâ tarafından oluşturulmuş kısa bir açıklama almanızı sağlayan hafif bir Chrome uzantısıdır.
