@@ -3,6 +3,7 @@
 AI Explain is a lightweight Chrome extension that allows you to highlight any text on any website and get a short AI-generated explanation with a single click.
 
 ---
+![Image](https://github.com/user-attachments/assets/6f538ff5-7dcd-40d6-b5a6-d4d5ef3dd6f3)
 
 ## 📦 How It Works
 
