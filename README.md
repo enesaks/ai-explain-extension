@@ -1,4 +1,4 @@
-🌍 Language: [English](README.md) | [Türkçe](README.tr.md)
+🌍 Language: [English](./README.md) | [Türkçe](./README.tr.md)
 # AI Explain – Smart Text Explain Extension
 
 AI Explain is a lightweight Chrome extension that allows you to highlight any text on any website and get a short AI-generated explanation with a single click.
