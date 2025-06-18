@@ -146,25 +146,23 @@ function createPopup(x, y, initialText) {
 }
 
 async function getExplanation(text) {
-    const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
-        method: "POST",
-        headers: {
-            // ⛔ IMPORTANT: Insert your OpenRouter API key below
-            // Example: Authorization: "Bearer sk-or-xxxxxxxxxxxxxxxx"
-            Authorization: "Bearer YOUR_API_KEY_HERE",
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            model: "mistralai/mistral-7b-instruct",
-            messages: [
-                {
-                    role: "user",
-                    content: `Briefly explain this concept in a clear and simple way: ${text}`
-                }
-            ]
-        })
-    });
+  const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      // ⛔ Insert your OpenRouter API key below
+      // Example: Authorization: "Bearer sk-or-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+      Authorization: "Bearer YOUR_API_KEY_HERE",
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      model: "deepseek/deepseek-chat-v3-0324:free",
+      messages: [
+        { role: "system", content: "You are a helpful assistant. Respond in clear and concise English." },
+        { role: "user", content: `Briefly and clearly explain: ${text}` }
+      ]
+    })
+  });
 
-    const data = await response.json();
-    return data?.choices?.[0]?.message?.content || "No response.";
+  const data = await response.json();
+  return data?.choices?.[0]?.message?.content || "No response.";
 }
