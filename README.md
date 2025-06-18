@@ -35,6 +35,7 @@ In the API request, the `messages` section determines how the AI responds:
   { "role": "system", "content": "You are a helpful assistant." },
   { "role": "user", "content": "Briefly and clearly explain: [SELECTED TEXT]" }
 ]
+```
 
 ## ⚙️ Tech Stack
 
